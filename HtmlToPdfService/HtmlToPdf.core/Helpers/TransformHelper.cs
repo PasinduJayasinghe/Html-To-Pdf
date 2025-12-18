@@ -10,6 +10,7 @@ namespace HtmlToPdf.core.Helpers
     {
         private static readonly SemaphoreSlim _browserDownloadLock = new SemaphoreSlim(1, 1);
         private static bool _isBrowserDownloaded = false;
+        private static readonly string _chromiumPath = Path.Combine(Directory.GetCurrentDirectory(), "chromium");
 
         public string ReplaceTables(Report report, string htmlTemplate)
         {
@@ -86,7 +87,7 @@ namespace HtmlToPdf.core.Helpers
         /// </summary>
         private async Task EnsureChromiumBrowserDownloadedAsync()
         {
-            // If already downloaded, skip
+            // If already downloaded in this session, skip
             if (_isBrowserDownloaded)
             {
                 return;
@@ -102,14 +103,20 @@ namespace HtmlToPdf.core.Helpers
                     return;
                 }
 
-                var browserFetcher = new BrowserFetcher();
-                
-                // Check if browser is already downloaded
-                var installedBrowser = browserFetcher.GetInstalledBrowsers().FirstOrDefault();
-                
-                if (installedBrowser == null)
+                // Check if Chromium is already downloaded by verifying folder exists and has files
+                if (Directory.Exists(_chromiumPath) && Directory.GetFiles(_chromiumPath, "*", SearchOption.AllDirectories).Any())
                 {
-                    // Download Chromium browser
+                    Console.WriteLine("Chromium is already downloaded.");
+                }
+                else
+                {
+                    Console.WriteLine("Chromium is not downloaded. Downloading now...");
+                    
+                    var fetcherOptions = new BrowserFetcherOptions
+                    {
+                        Path = _chromiumPath
+                    };
+                    var browserFetcher = new BrowserFetcher(fetcherOptions);
                     await browserFetcher.DownloadAsync();
                 }
 
@@ -126,14 +133,19 @@ namespace HtmlToPdf.core.Helpers
         /// </summary>
         private async Task<byte[]> GeneratePdfFromHtmlAsync(string htmlContent, Report report, string headerHtml, string footerHtml)
         {
+            // Find the chrome executable in the chromium folder
+            var chromeExePath = Directory.GetFiles(_chromiumPath, "chrome.exe", SearchOption.AllDirectories).FirstOrDefault()
+                             ?? Directory.GetFiles(_chromiumPath, "chromium", SearchOption.AllDirectories).FirstOrDefault();
+
             var launchOptions = new LaunchOptions
             {
                 Headless = true,
+                ExecutablePath = chromeExePath,
                 Args = new[] { "--no-sandbox", "--disable-setuid-sandbox" }
             };
 
-            using var browser = await Puppeteer.LaunchAsync(launchOptions);
-            using var page = await browser.NewPageAsync();
+            await using var browser = await Puppeteer.LaunchAsync(launchOptions);
+            await using var page = await browser.NewPageAsync();
 
             // Set the HTML content
             await page.SetContentAsync(htmlContent, new NavigationOptions

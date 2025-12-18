@@ -1,0 +1,253 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HtmlToPdf.api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/convert-to_pdf": {
+      "post": {
+        "tags": [
+          "HtmlToPdf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HeaderFooterText": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "font": {
+            "type": "string",
+            "nullable": true
+          },
+          "fontSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alignment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Margin": {
+        "type": "object",
+        "properties": {
+          "left": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "height": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PageMargin": {
+        "type": "object",
+        "properties": {
+          "headerMargin": {
+            "$ref": "#/components/schemas/Margin"
+          },
+          "footerMargin": {
+            "$ref": "#/components/schemas/Margin"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PageSetup": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "string",
+            "nullable": true
+          },
+          "orientation": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageMargin": {
+            "$ref": "#/components/schemas/PageMargin"
+          },
+          "footerText": {
+            "$ref": "#/components/schemas/HeaderFooterText"
+          },
+          "headerText": {
+            "$ref": "#/components/schemas/HeaderFooterText"
+          },
+          "fontFamily": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Report": {
+        "type": "object",
+        "properties": {
+          "requestId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportData": {
+            "$ref": "#/components/schemas/ReportData"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReportData": {
+        "type": "object",
+        "properties": {
+          "includePageNumber": {
+            "type": "boolean"
+          },
+          "pageSetup": {
+            "$ref": "#/components/schemas/PageSetup"
+          },
+          "texts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Text"
+            },
+            "nullable": true
+          },
+          "tables": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Table"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Row": {
+        "type": "object",
+        "properties": {
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Table": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "tableMetaData": {
+            "type": "string",
+            "nullable": true
+          },
+          "headerRowMetaData": {
+            "type": "string",
+            "nullable": true
+          },
+          "headerCellMetaData": {
+            "type": "string",
+            "nullable": true
+          },
+          "rowMetaData": {
+            "type": "string",
+            "nullable": true
+          },
+          "cellMetaData": {
+            "type": "string",
+            "nullable": true
+          },
+          "headers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "rows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Row"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Text": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

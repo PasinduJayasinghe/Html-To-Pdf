@@ -1,0 +1,246 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.api\\HtmlToPdf.api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj",
+        "projectName": "General",
+        "projectPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj",
+        "packagesPath": "C:\\Users\\thisa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.api\\HtmlToPdf.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.api\\HtmlToPdf.api.csproj",
+        "projectName": "HtmlToPdf.api",
+        "projectPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.api\\HtmlToPdf.api.csproj",
+        "packagesPath": "C:\\Users\\thisa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj": {
+                "projectPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj"
+              },
+              "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj": {
+                "projectPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.2.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj",
+        "projectName": "HtmlToPdf.core",
+        "projectPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj",
+        "packagesPath": "C:\\Users\\thisa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj": {
+                "projectPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\General\\General\\General.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

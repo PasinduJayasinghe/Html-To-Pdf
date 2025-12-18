@@ -1,0 +1,13 @@
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\bin\Debug\net8.0\General.deps.json
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\bin\Debug\net8.0\General.dll
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\bin\Debug\net8.0\General.pdb
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.csproj.AssemblyReference.cache
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.AssemblyInfoInputs.cache
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.AssemblyInfo.cs
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.csproj.CoreCompileInputs.cache
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.sourcelink.json
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.dll
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\refint\General.dll
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\General.pdb
+C:\Users\thisa\OneDrive\Desktop\HtmlToPdf\HtmlToPdf\HtmlToPdf\General\General\obj\Debug\net8.0\ref\General.dll

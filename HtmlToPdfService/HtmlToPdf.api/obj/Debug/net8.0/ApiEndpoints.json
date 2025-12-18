@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "HtmlToPdf.api.Controllers.HtmlToPdfController",
+    "Method": "ConvertToPdf",
+    "RelativePath": "api/convert-to_pdf",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "report",
+        "Type": "General.Entities.Report",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Byte[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

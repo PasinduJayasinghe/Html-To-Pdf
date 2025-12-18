@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A84D2A-812A-4933-8392-AE7FBAA4F667}|HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj|c:\\users\\thisa\\onedrive\\desktop\\htmltopdf\\htmltopdf\\htmltopdf\\htmltopdfservice\\htmltopdf.core\\helpers\\transformhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A84D2A-812A-4933-8392-AE7FBAA4F667}|HtmlToPdfService\\HtmlToPdf.core\\HtmlToPdf.core.csproj|solutionrelative:htmltopdfservice\\htmltopdf.core\\helpers\\transformhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransformHelper.cs",
+              "DocumentMoniker": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\Helpers\\TransformHelper.cs",
+              "RelativeDocumentMoniker": "HtmlToPdfService\\HtmlToPdf.core\\Helpers\\TransformHelper.cs",
+              "ToolTip": "C:\\Users\\thisa\\OneDrive\\Desktop\\HtmlToPdf\\HtmlToPdf\\HtmlToPdf\\HtmlToPdfService\\HtmlToPdf.core\\Helpers\\TransformHelper.cs",
+              "RelativeToolTip": "HtmlToPdfService\\HtmlToPdf.core\\Helpers\\TransformHelper.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T16:22:24.679Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
